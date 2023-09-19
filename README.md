@@ -1,6 +1,8 @@
 # SwiftOS
 A from scratch hobbyist operating system.
 
+This operating system is **DEFINITELY** not ready for production environments. Watch out for bugs!
+
 Hello! I have remade my original operating system from scratch in C++. It runs on the i386 architecture. I hope this to become a long lasting project I work on for a while as I don't want this to be another failure. This operating system is intended to be an educational resource for future beginner operating system developers.
 
 ## Current Features
@@ -35,6 +37,14 @@ Hello! I have remade my original operating system from scratch in C++. It runs o
     - [ ] Mouse USB
     - [ ] Audio USB
     - [ ] Plugging in USBs and reading
+  - [ ] A logo for the operating system
+  - [ ] Assets
+    - [ ] Logo
+    - [ ] File type icons
+    - [ ] Program icons
+    - [ ] Desktop backgrounds
+    - [ ] In app images
+  - [ ] Screenshots
   
 ## Project Layout
 - **drivers** | Drivers for interfacing with hardware
@@ -46,10 +56,10 @@ Hello! I have remade my original operating system from scratch in C++. It runs o
   
 **Everything else is just implementations.**
     
-## Building and Running
-To build and run SwiftOS, you will need the dependencies.
+## Building
+To build SwiftOS, you will need the dependencies.
 
-SwiftOS was made on Linux, I'm not sure about WIndows, you will need to install the dependencies.
+SwiftOS was made on Linux, I'm not sure about Windows or MacOS, you will need to install the dependencies.
 
 ### Ubuntu:
 ```
@@ -62,8 +72,9 @@ sudo eopkg install g++ binutils qemu grub2 libisoburn virtualbox
 ```
 
 ### Other:
-Use your system package manager, the package names should be relatively the same.
+Use your system package manager to get the dependencies, the package names should be relatively the same.
 
+## Running
 Next, if you want to use QEMU, type:
 ```
 make run-qemu
@@ -72,6 +83,22 @@ If you'd prefer to use VirtualBox, create a new virtual machine and name it "Swi
 ```
 make run
 ```
-and then set the virtual machines iso as the one created in the project directory.
+and then set the virtual machines iso as the one created in the project directory and rerun the command.
 
 Each of these commands will also create an iso file in the project directory, you can use this in any other virtual machine software, or burn it to a USB.
+
+## Real Hardware
+**QUICK DISCLAIMER**  
+I have **not** tested this on real hardware! Real hardware might not like it.
+
+But with that out of the way...  
+To those who still want to test it make sure you use the correct hardware supported by SwiftOS.
+
+## Credits
+I would like to give a big thank you to the following people:
+- @writeyourownoperatingsystem on YouTube | I learnt a lot from your tutorial series and I'm now using your tutorials as a base that i can build upon
+
+## Contributing
+Any help is extremely appreciated, feel free to make pull requests and other contributions, then I just have to moderate them.
+
+# Thanks for reading!
